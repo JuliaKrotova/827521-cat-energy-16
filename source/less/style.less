@@ -1,0 +1,65 @@
+@import "normalize.less";
+@import "mixins.less";
+@import "blocks/visually-hidden.less";
+@import "blocks/page-header.less";
+@import "blocks/main-nav.less";
+@import "blocks/site-list.less";
+@import "blocks/promo.less";
+@import "blocks/program.less";
+@import "blocks/instruction.less";
+@import "blocks/example.less";
+@import "blocks/invite.less";
+@import "blocks/map.less";
+@import "blocks/page-footer.less";
+@import "blocks/social.less";
+@import "blocks/copyright.less";
+@import "blocks/catalog.less";
+@import "blocks/other-products.less";
+@import "blocks/special-offer.less";
+@import "blocks/request.less";
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  width: 100%;
+}
+
+.body-container {
+  width: 320px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.button {
+  display: inline-block;
+  font-family: "Oswald", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #68b738;
+  border: none;
+  padding: 11px 73px;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active,
+  &:focus {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}

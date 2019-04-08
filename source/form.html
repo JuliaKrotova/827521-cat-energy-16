@@ -4,141 +4,140 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-icon" src="http://placehold.it/150x100" width="" height="" alt="Иконка Кэт энерджи">
-      <img class="page-header__logo-title" src="http://placehold.it/150x100" width="" height="" alt="Магазин Кэт энерджи">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a>Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-
-  <main class="page-main">
-    <h1 class="visually-hidden">Форма подбора программы для кота</h1>
-    <section class="request">
-      <h2 class="request__title">Подбор программы</h2>
-      <p class="request__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
-      <form class="request__form" action="https://echo.htmlacademy.ru" method="get">
-        <div class="request__personal">
-          <p class="request__personal-item">
-            <label class="request__label" for="name">Имя:*</label>
-            <input class="request__input request__input--name" type="text" name="name" id="name" placeholder="Барсик">
-          </p>
-          <p class="request__personal-item">
-            <label class="request__label" for="weight">Вес (кг):*</label>
-            <input class="request__input request__input--weight" type="text" name="weight" id="weight" placeholder="7">
-          </p>
-          <p class="request__personal-item">
-            <label class="request__label" for="age">Возраст (лет):</label>
-            <input class="request__input request__input--age" type="text" name="age" id="age" placeholder="7">
-          </p>
-        </div>
-        <div class="request__program">
-          <ul class="request__program-list">
-            <li class="request__program-item">
-              <input class="visually-hidden request__input request__input--radio" type="radio" name="program-content" value="slim" id="program-slim" checked>
-              <label for="program-slim">Похудение</label>
-            </li>
-            <li class="request__program-item">
-              <input class="visually-hidden request__input request__input--radio" type="radio" name="program-content" value="pro" id="program-pro">
-              <label for="program-pro">Набор массы</label>
-            </li>
-            <li class="request__program-item">
-              <input class="visually-hidden request__input request__input--radio" type="radio" name="program-content" value="advice" id="program-advice">
-              <label for="program-advice">Не знаю (нужен ваш совет)</label>
-            </li>
-          </ul>
-        </div>
-        <div class="request__contacts">
-          <p class="request__caption"> Контактные данные (владельца кота)</p>
-          <p class="request__email">
-            <label class="request__label" for="email">E-mail:*</label>
-            <input class="request__input request__input--email" type="email" name="email" id="email" placeholder="Kuklachev@gmail.com">
-          </p>
-          <p class="request__email">
-            <label class="request__label" for="phone">Телефон:*</label>
-            <input class="request__input request__input--phone" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90">
-          </p>
-        </div>
-        <div class="request__comment">
-          <p class="request__caption"> Комментарий</p>
-          <textarea class="request__cat-about" name="cat-about" rows="8" cols="40" placeholder="Расскажите обо всех повадках кота"></textarea>
-        </div>
-        <div class="request__additional">
-          <p class="request__caption"> Дополнительно</p>
-          <ul class="request__additional-list">
-            <li class="request__additional-item">
-              <input class="visually-hidden request__input request__input--checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
-              <label for="sweetener">Сахарозаменитель</label>
-            </li>
-            <li class="request__additional-item">
-              <input class="visually-hidden request__input request__input--checkbox" type="checkbox" name="water" id="water">
-              <label for="water">Питьевая вода</label>
-            </li>
-            <li class="request__additional-item">
-              <input class="visually-hidden request__input request__input--checkbox" type="checkbox" name="milk" id="milk">
-              <label for="milk">Молоко</label>
-            </li>
-            <li class="request__additional-item">
-              <input class="visually-hidden request__input request__input--checkbox" type="checkbox" name="vitamins" id="vitamins">
-              <label for="vitamins">Витамины</label>
-            </li>
-          </ul>
-        </div>
-        <button type="submit" class="request__button button">Отправить заявку</button>
-        <p class="request__required">*— Обязательные поля</p>
-      </form>
-    </section>
-    <section class="invite">
-      <p class="invite__description">Приглашаем к сотрудничеству дилеров!</p>
-      <p class="invite__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-    </section>
-    <section class="map">
-      <img class="map__image" src="http://placehold.it/150x100" alt="Карта магазина Кэт Энерджи" width="" height="">
-    </section>
-  </main>
-
-  <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <a class="page-footer__logo">
-        <img class="page-footer__logo-title" src="http://placehold.it/150x100" width="" height="" alt="Магазин Кэт Энерджи">
+  <div class="body-container">
+    <header class="page-header">
+      <a class="page-header__logo">
       </a>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      </div>
-    </div>
-  </footer>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--active">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
+    <main class="page-main">
+      <h1 class="visually-hidden">Форма подбора программы для кота</h1>
+      <section class="request">
+        <h2 class="request__title">Подбор программы</h2>
+        <p class="request__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <form class="request__form" action="https://echo.htmlacademy.ru" method="get">
+          <div class="request__personal">
+            <p class="request__personal-item">
+              <label class="request__label" for="name">Имя:*</label>
+              <input class="request__input request__input--name" type="text" name="name" id="name" placeholder="Барсик">
+            </p>
+            <p class="request__personal-item">
+              <label class="request__label" for="weight">Вес (кг):*</label>
+              <input class="request__input request__input--weight" type="text" name="weight" id="weight" placeholder="7">
+            </p>
+            <p class="request__personal-item">
+              <label class="request__label" for="age">Возраст (лет):</label>
+              <input class="request__input request__input--age" type="text" name="age" id="age" placeholder="7">
+            </p>
+          </div>
+          <div class="request__program">
+            <ul class="request__program-list">
+              <li class="request__program-item">
+                <input class="visually-hidden request__input request__input--radio" type="radio" name="program-content" value="slim" id="program-slim" checked>
+                <label class="request__label request__label--program" for="program-slim">Похудение</label>
+              </li>
+              <li class="request__program-item">
+                <input class="visually-hidden request__input request__input--radio" type="radio" name="program-content" value="pro" id="program-pro">
+                <label class="request__label request__label--program" for="program-pro">Набор массы</label>
+              </li>
+              <li class="request__program-item">
+                <input class="visually-hidden request__input request__input--radio" type="radio" name="program-content" value="advice" id="program-advice">
+                <label class="request__label request__label--program" for="program-advice">Не знаю (нужен ваш совет)</label>
+              </li>
+            </ul>
+          </div>
+          <div class="request__contacts">
+            <p class="request__caption"> Контактные данные (владельца кота)</p>
+            <p class="request__contacts-item">
+              <label class="request__label" for="email">E-mail:*</label>
+              <input class="request__input request__input--email" type="email" name="email" id="email" placeholder="Kuklachev@gmail.com">
+            </p>
+            <p class="request__contacts-item">
+              <label class="request__label" for="phone">Телефон:*</label>
+              <input class="request__input request__input--phone" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90">
+            </p>
+          </div>
+          <div class="request__comment">
+            <p class="request__caption"> Комментарий</p>
+            <textarea class="request__cat-about" name="cat-about" rows="8" cols="40" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </div>
+          <div class="request__additional">
+            <p class="request__caption"> Дополнительно</p>
+            <ul class="request__additional-list">
+              <li class="request__additional-item">
+                <input class="visually-hidden request__input request__input--checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
+                <label class="request__label request__label--additional" for="sweetener">Сахарозаменитель</label>
+              </li>
+              <li class="request__additional-item">
+                <input class="visually-hidden request__input request__input--checkbox" type="checkbox" name="water" id="water">
+                <label class="request__label request__label--additional" for="water">Питьевая вода</label>
+              </li>
+              <li class="request__additional-item">
+                <input class="visually-hidden request__input request__input--checkbox" type="checkbox" name="milk" id="milk">
+                <label class="request__label request__label--additional" for="milk">Молоко</label>
+              </li>
+              <li class="request__additional-item">
+                <input class="visually-hidden request__input request__input--checkbox" type="checkbox" name="vitamins" id="vitamins">
+                <label class="request__label request__label--additional" for="vitamins">Витамины</label>
+              </li>
+            </ul>
+          </div>
+          <button type="submit" class="request__button button">Отправить заявку</button>
+          <p class="request__required">*— Обязательные поля</p>
+        </form>
+      </section>
+      <section class="invite">
+        <p class="invite__description">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="invite__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </section>
+      <section class="map">
+        <img class="map__image" src="img/bg-map-mobile@1x.png" alt="Карта магазина Кэт Энерджи" width="320" height="400">
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo">
+        </a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте</span></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"><span class="visually-hidden">Мы в Инстаграме</span></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбуке</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
+  </div>
 </body>
 
 </html>
