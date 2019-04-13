@@ -1,6 +1,6 @@
 .instruction {
-  padding-left: 20px;
-  padding-right: 20px;
+  width: 280px;
+  margin: 0 auto;
   margin-bottom: 42px;
 }
 
@@ -20,6 +20,8 @@
 }
 
 .instruction__item {
+  position: relative;
+  z-index: 1;
   margin-bottom: 28px;
 
   &:last-child {
@@ -27,7 +29,75 @@
   }
 }
 
+.instruction__number {
+  display: none;
+  position: absolute;
+  top: -40px;
+  left: 125px;
+  .font-oswald();
+  font-size: 281px;
+  line-height: 281px;
+  color: #f2f2f2;
+}
+
 .instruction__description {
+  position: relative;
+  z-index: 1;
   padding-left: 80px;
   margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .instruction {
+    width: 768px;
+    margin-bottom: 0;
+  }
+
+  .instruction__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .instruction__item {
+    width: 354px;
+    padding-top: 112px;
+    padding-bottom: 133px;
+    margin-bottom: 0;
+
+    &:last-child {
+      padding-bottom: 100px;
+    }
+  }
+
+  .instruction__title {
+    font-size: 60px;
+  }
+
+  .instruction__number {
+    display: block;
+  }
+
+  .instruction__description {
+    padding-left: 0;
+    width: 245px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .instruction {
+    width: 1220px;
+    margin-bottom: 90px;
+    border: none;
+  }
+
+  .instruction__item {
+    width: 245px;
+    margin-right: 80px;
+    padding-bottom: 45px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }

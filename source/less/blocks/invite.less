@@ -2,9 +2,11 @@
   display: flex;
   padding: 30px 20px 25px;
   background-color: #f2f2f2;
+  width: 320px;
+  margin: 0 auto;
 
   &--index {
-    background-color: #ffffff;
+    background-color: transparent;
   }
 }
 
@@ -18,4 +20,48 @@
 .invite__address {
   width: 140px;
   line-height: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .invite {
+    width: 628px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 65px;
+    padding-bottom: 60px;
+    justify-content: space-between;
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+  .invite {
+    position: absolute;
+    background-color: #ffffff;
+    width: 570px;
+    padding: 0;
+  }
+
+  .invite__description {
+    box-sizing: border-box;
+    width: 285px;
+    padding-left: 70px;
+    padding-top: 70px;
+    padding-bottom: 60px;
+    margin: 0;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .invite__address {
+    box-sizing: border-box;
+    width: 285px;
+    padding-left: 40px;
+    padding-right: 80px;
+    padding-top: 70px;
+    padding-bottom: 60px;
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
