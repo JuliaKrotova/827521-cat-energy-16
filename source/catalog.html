@@ -9,8 +9,8 @@
 </head>
 
 <body>
-  <div class="body-container">
     <header class="page-header">
+      <div class="header__wrapper">
       <a class="page-header__logo">
       </a>
       <nav class="main-nav">
@@ -29,6 +29,7 @@
           </ul>
         </div>
       </nav>
+      </div>
     </header>
 
     <main class="page-inner">
@@ -37,6 +38,7 @@
         <h2 class="catalog__title">Каталог продукции</h2>
         <ul class="catalog__list">
           <li class="catalogs__item">
+            <div class="catalogs__item-wrapper">
             <a class="catalogs__link catalogs__link--image" href="#">
               <img class="catalog__image" src="http://placehold.it/150x100" width="" height="" alt="Cat Energy PRO 500 г">
             </a>
@@ -58,8 +60,10 @@
               </tr>
             </table>
             <a class="catalog__button button" href="#">Заказать</a>
+          </div>
           </li>
           <li class="catalogs__item">
+            <div class="catalogs__item-wrapper">
             <a class="catalogs__link catalogs__link--image" href="#">
               <img class="catalog__image" src="http://placehold.it/150x100" width="" height="" alt="Cat Energy PRO 1000 г">
             </a>
@@ -81,8 +85,10 @@
               </tr>
             </table>
             <a class="catalog__button button" href="#">Заказать</a>
+            </div>
           </li>
           <li class="catalogs__item">
+            <div class="catalogs__item-wrapper">
             <a class="catalogs__link catalogs__link--image" href="#">
               <img class="catalog__image" src="http://placehold.it/150x100" width="" height="" alt="Cat Energy PRO 500 г">
             </a>
@@ -104,8 +110,10 @@
               </tr>
             </table>
             <a class="catalog__button button" href="#">Заказать</a>
+            </div>
           </li>
           <li class="catalogs__item">
+            <div class="catalogs__item-wrapper">
             <a class="catalogs__link catalogs__link--image" href="#">
               <img class="catalog__image" src="http://placehold.it/150x100" width="" height="" alt="Cat Energy PRO 1000 г">
             </a>
@@ -127,8 +135,10 @@
               </tr>
             </table>
             <a class="catalog__button button" href="#">Заказать</a>
+            </div>
           </li>
           <li class="catalogs__item">
+            <div class="catalogs__item-wrapper">
             <a class="catalogs__link catalogs__link--image" href="#">
               <img class="catalog__image" src="http://placehold.it/150x100" width="" height="" alt="Cat Energy Slim 500 г">
             </a>
@@ -150,8 +160,10 @@
               </tr>
             </table>
             <a class="catalog__button button" href="#">Заказать</a>
+            </div>
           </li>
           <li class="catalogs__item">
+            <div class="catalogs__item-wrapper">
             <a class="catalogs__link catalogs__link--image" href="#">
               <img class="catalog__image" src="http://placehold.it/150x100" width="" height="" alt="Cat Energy Slim 1000 г">
             </a>
@@ -173,8 +185,10 @@
               </tr>
             </table>
             <a class="catalog__button button" href="#">Заказать</a>
+            </div>
           </li>
           <li class="catalogs__item">
+            <div class="catalogs__item-wrapper">
             <a class="catalogs__link catalogs__link--image" href="#">
               <img class="catalog__image" src="http://placehold.it/150x100" width="" height="" alt="Cat Energy Slim 500 г">
             </a>
@@ -196,16 +210,20 @@
               </tr>
             </table>
             <a class="catalog__button button" href="#">Заказать</a>
+            </div>
+          </li>
+          <li class="catalogs__item">
+            <div class="catalogs__item-wrapper catalog__more">
+              <button class="catalog__plus" type="button" name="button"></button>
+              <p class="catalog__show-more">Показать еще 100500 товаров</p>
+              <p class="catalog__tastes-more">На самом деле вкусов гораздо больше!</p>
+              <a class="catalog__button catalog__button--more button" href="#">Показать все</a>
+            </div>
           </li>
         </ul>
-        <div class="catalog__more">
-          <button class="catalog__plus" type="button" name="button"></button>
-          <p class="catalog__show-more">Показать еще 100500 товаров</p>
-          <p class="catalog__tastes-more">На самом деле вкусов гораздо больше!</p>
-          <a class="catalog__button catalog__button--more button" href="#">Показать все</a>
-        </div>
       </section>
       <section class="other-products">
+        <div class="other-products__wrapper">
         <h2 class="other-products__title">Дополнительные товары</h2>
         <ul class="other-products__list">
           <li class="other-products__item">
@@ -241,10 +259,12 @@
             <a class="other-products__button catalog__button button" href="#">Заказать</a>
           </li>
         </ul>
+      </div>
+        <div class="special-offer">
+          <p class="special-offer__present">Закажите все и получите чехол для кота в подарок!</p>
+        </div>
       </section>
-      <section class="special-offer">
-        <p class="special-offer__present">Закажите все и получите чехол для кота в подарок!</p>
-      </section>
+
       <section class="invite">
         <p class="invite__description">Приглашаем к сотрудничеству дилеров!</p>
         <p class="invite__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
@@ -276,7 +296,6 @@
         </div>
       </div>
     </footer>
-  </div>
 </body>
 
 </html>
