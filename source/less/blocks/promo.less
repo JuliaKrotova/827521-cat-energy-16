@@ -1,5 +1,5 @@
 .promo {
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   text-align: center;
   color: #ffffff;
   width: 100%;
@@ -46,6 +46,7 @@
 .promo__button {
   margin: 135px auto 20px;
 }
+
 @media (min-width: @tablet-width) {
   .promo {
     color: #111111;
@@ -95,6 +96,7 @@
     margin-bottom: 530px;
   }
 }
+
 @media (min-width: @desktop-width) {
   .promo {
     width: 1300px;
@@ -102,8 +104,7 @@
   }
 
   .promo__image {
-    top: 0;
-    left: 470px;
+    display: none; /*здесь будет другое изображение*/
   }
 
   .button.promo__button {
@@ -113,11 +114,5 @@
   .promo__title {
     padding-top: 0;
     padding-bottom: 30px;
-  }
-
-  .promo__image {
-    display: none; //здесь будет другое изображение
-    //top: 200px;
-    //left: 30px;
   }
 }
