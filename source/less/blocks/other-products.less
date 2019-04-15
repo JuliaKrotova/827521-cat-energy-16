@@ -1,9 +1,6 @@
 .other-products {
   width: 320px;
-  margin-top: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 35px;
+  margin: 0 auto 35px;
 }
 
 .other-products__title {
@@ -50,71 +47,98 @@
   margin-bottom: 17px;
 }
 
+.other-products__special-offer {
+  background-color: #7cc053;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 35px;
+}
+
+.other-products__present {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  padding: 188px 60px 42px 70px;
+  margin: 0;
+}
 @media (min-width: @tablet-width) {
   .other-products {
     width: 768px;
     margin-top: -70px;
     margin-bottom: 75px;
   }
+
   .other-products__title {
     font-size: 36px;
     line-height: 36px;
     width: 340px;
     padding: 0 37px;
-    margin-top: 0;
-    margin-bottom: 75px;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin: 0 30px 75px;
     border: none;
   }
+
   .other-products__list {
     margin-bottom: 70px;
   }
+
   .other-products__item {
     box-sizing: border-box;
     margin: 0 30px;
     width: 708px;
-    padding-top: 28px;
-    padding-bottom: 28px;
-    padding-left: 37px;
-    padding-right: 37px;
+    padding: 28px 37px;
 
-    &:first-child{
+    &:first-child {
       border-top: 1px solid #e6e6e6;
     }
   }
 
+  .other-products__special-offer {
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 75px;
+  }
 }
-
 @media (min-width: @desktop-width) {
   .other-products {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     width: 1300px;
     margin-top: -60px;
     margin-bottom: 85px;
   }
-  .other-products__wrapper{
-    width: 895px;
 
+  .other-products__wrapper {
+    width: 895px;
   }
+
   .other-products__title {
     padding: 0 40px;
-    margin-top: 0;
-    margin-bottom: 75px;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin: 0 30px 75px;
     border: none;
   }
+
   .other-products__list {
     margin-bottom: 85px;
   }
+
   .other-products__item {
     margin: 0 40px;
     width: 895px;
     padding: 27px 0;
   }
-  .special-offer{
+
+  .other-products__special-offer {
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 85px;
     width: 245px;
   }
 }

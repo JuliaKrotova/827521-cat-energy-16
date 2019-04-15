@@ -1,21 +1,19 @@
-.main-nav{
+.main-nav {}
 
-}
-
-.main-nav__list{
+.main-nav__list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.main-nav__toggle{
+.main-nav__toggle {
   padding: 0 20px;
 }
-
 @media (min-width: @tablet-width) {
   .main-nav__toggle {
     display: none;
   }
+
   .main-nav__list {
     display: flex;
     width: 500px;
@@ -23,15 +21,13 @@
     padding-top: 25px;
   }
 }
-
 @media (min-width: @desktop-width) {
   .main-nav__list {
     width: 570px;
-    padding: 0 40px;
-    padding-top: 45px;
+    padding: 45px 40px 0;
 
-    &--index{
-        padding-bottom: 535px;
+    &--index {
+      padding-bottom: 535px;
     }
   }
 }

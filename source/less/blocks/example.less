@@ -3,7 +3,7 @@
   border-top: 1px solid #d9d9d9;
 }
 
-.example__container{
+.example__container {
   width: 280px;
   margin: 0 auto;
 }
@@ -23,8 +23,8 @@
   padding-bottom: 25px;
 }
 
-.example__result-container{
-margin-bottom: 45px;
+.example__result-container {
+  margin-bottom: 45px;
 }
 
 .example__result-list {
@@ -73,18 +73,22 @@ margin-bottom: 45px;
   margin: 0;
   padding: 0;
 }
-.example__item{
+
+.example__item {
   background-repeat: no-repeat;
   width: 320px;
   height: 240px;
-&--before{
-  background-image: url(../img/before-mobile@1x.png);
+
+  &--before {
+    background-image: url("../img/before-mobile@1x.png");
+  }
+
+  &--after {
+    display: none;
+    background-image: url("../img/after-mobile@1x.png");
+  }
 }
-&--after{
-  display: none;
-  background-image: url(../img/after-mobile@1x.png);
-}
-}
+
 .example__toggles {
   display: flex;
   justify-content: space-between;
@@ -111,62 +115,65 @@ margin-bottom: 45px;
     outline: none;
   }
 }
-
 @media (min-width: @tablet-width) {
   .example {
     background-color: transparent;
     border-top: none;
   }
-  .example__container{
+
+  .example__container {
     width: 768px;
   }
-  .example__result-container{
+
+  .example__result-container {
     display: flex;
     justify-content: space-between;
     margin-bottom: 265px;
   }
-  .example__cost{
+
+  .example__cost {
     padding-top: 16px;
   }
-  .example__wrapper{
+
+  .example__wrapper {
     background-color: #f2f2f2;
-    background-image: url();
-  }
-  .example__toggles {
-    padding-left: 70px;
-    padding-right: 70px;
-    padding-bottom: 65px;
-    padding-top: 360px;
+    background-image: url(");
   }
 
-  .example__list{
+  .example__toggles {
+    padding: 360px 70px 65px;
+  }
+
+  .example__list {
     position: relative;
   }
-  .example__item{
+
+  .example__item {
     position: absolute;
     top: -180px;
     left: 50px;
   }
-  .example__item{
+
+  .example__item {
     width: 690px;
     height: 517px;
 
-  &--before{
-    background-image: url(../img/before-tablet@1x.png);
-  }
-  &--after{
-    display: none;
-    background-image: url(../img/after-tablet@1x.png);
-  }
-  }
+    &--before {
+      background-image: url("../img/before-tablet@1x.png");
+    }
 
+    &--after {
+      display: none;
+      background-image: url("../img/after-tablet@1x.png");
+    }
+  }
 }
-
 @media (min-width: @desktop-width) {
-  .example__container{
+  .example__container {
     width: 1220px;
   }
-  .example__result-container{
+
+  .example__result-container {
     flex-direction: column;
   }
 }
