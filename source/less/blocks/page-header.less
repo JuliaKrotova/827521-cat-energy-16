@@ -1,3 +1,56 @@
+.header__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
 .page-header__logo {
+  height: 65px;
   border-bottom: 1px solid #e6e6e6;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    margin-bottom: 30px;
+  }
+
+  .header__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .page-header__logo {
+    width: 192px;
+    border: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    width: 100%;
+    position: relative;
+  }
+
+  .header__wrapper {
+    width: 1330px;
+  }
+
+  .background-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #65a93c;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+  }
+
+  .page-header__logo {
+    width: 245px;
+  }
 }

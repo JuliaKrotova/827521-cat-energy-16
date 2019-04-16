@@ -1,11 +1,23 @@
 .invite {
-  display: flex;
-  padding: 30px 20px 25px;
   background-color: #f2f2f2;
+  min-width: 320px;
+  width: 100%;
+}
 
-  &--index {
-    background-color: #ffffff;
-  }
+.invite-index {
+  background-color: transparent;
+}
+
+.invite__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.invite__container {
+  display: flex;
+  box-sizing: border-box;
+  padding: 30px 20px 25px;
+  width: 100%;
 }
 
 .invite__description {
@@ -18,4 +30,53 @@
 .invite__address {
   width: 140px;
   line-height: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .invite__wrapper {
+    width: 768px;
+  }
+
+  .invite__container {
+    padding: 65px 70px 60px;
+    justify-content: space-between;
+    width: 628px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .invite__wrapper {
+    position: relative;
+    width: 1300px;
+  }
+
+  .invite__container {
+    position: absolute;
+    top: 90px;
+    left: 40px;
+    background-color: #ffffff;
+    width: 570px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .invite__description {
+    box-sizing: border-box;
+    width: 285px;
+    padding-left: 70px;
+    padding-top: 70px;
+    padding-bottom: 60px;
+    margin: 0;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .invite__address {
+    box-sizing: border-box;
+    width: 285px;
+    padding: 70px 80px 60px 40px;
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
