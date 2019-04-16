@@ -35,4 +35,26 @@
   .site-list__item {
     border: none;
   }
+
+  .site-list {
+    .font-oswald();
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    font-size: 20px;
+  }
+
+  .site-list__link {
+    &--index-active {
+      border-bottom: 2px solid #ffffff;
+    }
+  }
+
+  .site-list__link--index {
+    color: #ffffff;
+  }
 }
