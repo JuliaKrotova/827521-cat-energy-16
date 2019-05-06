@@ -8,7 +8,7 @@
   text-transform: none;
   font-size: 36px;
   line-height: 60px;
-  margin-top: 20px;
+  margin-top: 17px;
   margin-bottom: 23px;
   padding-left: 20px;
   padding-right: 20px;
@@ -21,7 +21,7 @@
   font-size: 14px;
   line-height: 18px;
   margin-top: 0;
-  margin-bottom: 38px;
+  margin-bottom: 41px;
 }
 
 .request__personal {
@@ -53,15 +53,16 @@
 }
 
 .request__input {
+  .font-oswald();
   box-sizing: border-box;
   font-size: 16px;
   line-height: 18px;
-  padding: 14px 15px 15px;
+  padding: 14px 15px 13px;
   outline: 1px solid #e6e6e6;
   border: none;
 
   &--name {
-    width: 224px;
+    width: 228px;
   }
 
   &--weight {
@@ -77,7 +78,7 @@
   }
 
   &--phone {
-    width: 205px;
+    width: 204px;
   }
 
   &:focus {
@@ -131,7 +132,7 @@
 
 .request__contacts-icon {
   position: absolute;
-  top: 17px;
+  top: 16px;
   right: 15px;
 
   &--email {
@@ -151,7 +152,11 @@
   font-size: 24px;
   line-height: 24px;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 33px;
+
+  &--additional{
+  margin-bottom: 37px;
+  }
 }
 
 .request__caption-wrapper {
@@ -172,7 +177,7 @@
   background-color: #68b738;
   left: 35%;
   right: 0;
-  margin-top: 14px;
+  margin-top: 12px;
 }
 
 .request__contacts-item {
@@ -182,12 +187,16 @@
   width: 280px;
   margin-top: 0;
   margin-bottom: 14px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .request__comment {
   padding-left: 20px;
   padding-right: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 
 .request__cat-about {
@@ -200,12 +209,13 @@
   outline: 1px solid #e6e6e6;
   width: 280px;
   min-height: 150px;
+  padding-top: 13px;
 }
 
 .request__additional {
   padding-left: 20px;
   padding-right: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 
 .request__additional-list {
@@ -216,7 +226,7 @@
 
 .request__additional-item {
   position: relative;
-  padding-bottom: 26px;
+  padding-bottom: 23px;
 
   &:last-child {
     padding-bottom: 0;
@@ -250,10 +260,10 @@
 }
 
 .request__filter-input--checkbox+label::before {
-  width: 30px;
-  height: 30px;
+  width: 29px;
+  height: 28px;
   left: 0;
-  top: -6px;
+  top: -5px;
   border: 1px solid #cfcfcf;
 }
 

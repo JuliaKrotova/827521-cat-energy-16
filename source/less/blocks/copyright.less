@@ -1,6 +1,28 @@
 .copyright__link {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 16px;
   line-height: 16px;
   color: #444444;
+}
+
+.copyright__link-span{
+
+  &:hover{
+    opacity: 0.8;
+  }
+
+  &:active{
+    opacity: 0.6;
+  }
+}
+
+.copyright__link:hover svg path{
+  fill: #68b738;
+}
+
+.copyright__link:active svg path{
+  fill: #68b738;
+  opacity: 0.3;
 }
