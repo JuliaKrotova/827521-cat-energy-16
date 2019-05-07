@@ -48,11 +48,16 @@
 }
 
 @media (min-width: @tablet-width) {
+  .main-nav {
+    width: 450px;
+    padding: 0 30px;
+  }
+
   .main-nav__list {
     display: flex;
-    width: 500px;
-    padding-right: 30px;
-    padding-top: 25px;
+    justify-content: space-between;
+    width: 440px;
+    padding-top: 42px;
   }
 
   .main-nav__toggle {
@@ -60,9 +65,15 @@
   }
 }
 @media (min-width: @desktop-width) {
+  .main-nav {
+    width: 480px;
+    padding: 0 40px;
+    margin: 0;
+  }
+
   .main-nav__list {
-    width: 570px;
-    padding: 45px 40px 0;
+    width: 480px;
+    padding-top: 73px;
 
     &--index {
       padding-bottom: 535px;

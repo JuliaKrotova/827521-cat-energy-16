@@ -32,15 +32,34 @@
   line-height: 20px;
 }
 
+.invite__space{
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .invite__wrapper {
     width: 768px;
   }
 
   .invite__container {
-    padding: 65px 70px 60px;
+    padding: 46px 71px 40px;
     justify-content: space-between;
-    width: 628px;
+  }
+
+  .invite__description {
+    width: 155px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .invite__address {
+    width: 155px;
+    font-size: 16px;
+    text-align: right;
+  }
+
+  .invite__space{
+    display: block;
   }
 }
 
@@ -63,7 +82,7 @@
   .invite__description {
     box-sizing: border-box;
     width: 285px;
-    padding-left: 70px;
+    padding-left: 75px;
     padding-top: 70px;
     padding-bottom: 60px;
     margin: 0;
@@ -78,5 +97,6 @@
     margin: 0;
     font-size: 16px;
     line-height: 20px;
+    text-align: left;
   }
 }
