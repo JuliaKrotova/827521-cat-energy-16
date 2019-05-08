@@ -14,17 +14,17 @@
   font-size: 36px;
   line-height: 60px;
   margin: 0;
-  padding-top: 28px;
+  padding-top: 17px;
   padding-bottom: 26px;
 }
 
 .example__description {
   margin: 0;
-  padding-bottom: 25px;
+  padding-bottom: 54px;
 }
 
 .example__result-container {
-  margin-bottom: 45px;
+  margin-bottom: 304px;
 }
 
 .example__result-list {
@@ -37,12 +37,12 @@
 }
 
 .example__result-item {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 122px;
-  padding-top: 16px;
-  padding-bottom: 22px;
+  width: 124px;
+  padding-bottom: 34px;
 }
 
 .example__result-value {
@@ -50,14 +50,21 @@
   font-size: 24px;
   line-height: 24px;
   text-align: center;
-  padding-bottom: 12px;
+  width: 100%;
+  padding: 16px 0;
+  border: 1px solid #cfcfcf;
+  border-radius: 3px;
 }
 
 .example__result-title {
+  position: absolute;
+  top: 48px;
+  left: 20px;
   line-height: 12px;
   text-align: center;
   width: 85px;
   margin: 0;
+  background-color: #f2f2f2;
 }
 
 .example__cost {
@@ -69,31 +76,53 @@
 }
 
 .example__list {
+  position: relative;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .example__item {
+  position: absolute;
   background-repeat: no-repeat;
-  width: 320px;
-  height: 240px;
 
   &--before {
-    background-image: url("../img/before-mobile@1x.png");
+    display: block;
+    left: -17px;
+    top: -265px;
+    width: 311px;
+    height: 232px;
   }
 
   &--after {
     display: none;
-    background-image: url("../img/after-mobile@1x.png");
+    left: 9px;
+    top: -261px;
+    width: 251px;
+    height: 240px;
+  }
+}
+
+.example__image{
+
+  &--before {
+    width: 311px;
+    height: 232px;
+  }
+
+  &--after {
+    width: 251px;
+    height: 240px;
   }
 }
 
 .example__toggles {
   display: flex;
   justify-content: space-between;
-  padding-left: 60px;
-  padding-right: 60px;
+  align-items: center;
+  width: 197px;
+  margin-left: 43px;
+  padding-top: 3px;
   padding-bottom: 37px;
 }
 
@@ -102,8 +131,9 @@
   font-size: 16px;
   line-height: 20px;
   border: none;
+  border-bottom: 1px dashed #f2f2f2;
   background-color: #f2f2f2;
-  border-bottom: 1px dashed #bebebe;
+  padding: 0;
 
   &:hover {
     border-bottom: 1px solid #989898;
@@ -116,14 +146,55 @@
   }
 }
 
+.slider__scale{
+  position: relative;
+  width: 82px;
+  height: 12px;
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
+}
+
+.slider__bar{
+  position: absolute;
+  width: 35px;
+  height: 6px;
+  background-color: #68b738;
+  border-radius: 3px;
+}
+
+.slider__bar--start{
+  display: block;
+  top: 3px;
+  left: 6px;
+}
+
+.slider__bar--end{
+  display: none;
+  top: 3px;
+  left: 42px;
+}
+
 @media (min-width: @tablet-width) {
   .example {
-    background-color: transparent;
+    background: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
     border-top: none;
+    margin-top: -32px;
   }
 
   .example__container {
-    width: 768px;
+    width: 708px;
+  }
+
+  .example__title {
+    font-size: 60px;
+    padding-top: 44px;
+    padding-bottom: 64px;
+  }
+
+  .example__description {
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .example__result-container {
@@ -132,16 +203,49 @@
     margin-bottom: 265px;
   }
 
-  .example__cost {
-    padding-top: 16px;
+  .example__result-list{
+    width: 366px;
   }
 
+  .example__result-item {
+    width: 162px;
+    padding-bottom: 34px;
+  }
+
+  .example__result-value {
+    font-size: 30px;
+    line-height: 37px;
+    padding-top: 14px;
+    padding-bottom: 19px;
+  }
+
+  .example__result-title {
+    width: auto;
+    padding-left: 9px;
+    padding-right: 9px;
+    top: 65px;
+    left: 9px;
+
+    &--weight{
+    left: 24px;
+    }
+  }
+
+  .example__cost {
+    width: 192px;
+    padding-top: 12px;
+    padding-right: 0;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+    }
+
   .example__wrapper {
-    background-color: #f2f2f2;
+
   }
 
   .example__toggles {
-    padding: 360px 70px 65px;
+    //padding: 360px 70px 65px;
   }
 
   .example__list {
@@ -149,20 +253,19 @@
   }
 
   .example__item {
-    position: absolute;
-    top: -180px;
-    left: 50px;
-    width: 690px;
-    height: 517px;
+
 
     &--before {
-      background-image: url("../img/before-tablet@1x.png");
+
     }
 
     &--after {
-      display: none;
-      background-image: url("../img/after-tablet@1x.png");
+
     }
+  }
+
+  .slider__toggle {
+    border-bottom: 1px dashed #bebebe;
   }
 }
 
