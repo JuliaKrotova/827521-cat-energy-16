@@ -1,5 +1,40 @@
 .social__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   list-style: none;
+  width: 125px;
+  line-height: 0;
   padding: 0;
   margin: 0;
+}
+
+.social__link:hover svg path {
+  fill: #68b738;
+}
+
+.social__link:focus svg path {
+  opacity: 0.3;
+}
+
+@media (min-width: @tablet-width) {
+  .social__list {
+    padding-left: 17px;
+  }
+
+  .social__link--vkontakte svg {
+    width: 30px;
+    height: 16px;
+  }
+
+  .social__link--instagram svg {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social__link--facebook svg {
+    width: 14px;
+    height: 28px;
+  }
 }

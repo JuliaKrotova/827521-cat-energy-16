@@ -3,48 +3,62 @@
   margin: 0 auto 35px;
 }
 
+.other-products__caption {
+  margin-top: 28px;
+  margin-bottom: 32px;
+}
+
 .other-products__title {
   .font-oswald();
   text-transform: none;
   font-size: 24px;
   line-height: 24px;
-  padding-top: 31px;
-  padding-bottom: 30px;
-  margin: 0 20px;
-  border-bottom: 1px solid #e6e6e6;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0;
+}
+
+.other-products .line-separator__wrapper {
+  box-shadow: none;
 }
 
 .other-products__list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 39px;
 }
 
 .other-products__item {
-  margin: 0 20px;
-  padding-top: 15px;
-  padding-bottom: 17px;
+  padding: 0;
+  margin-left: 20px;
+  margin-right: 20px;
   border-bottom: 1px solid #e6e6e6;
+
+  &:first-child {
+    border-top: 1px solid #e6e6e6;
+  }
 }
 
 .other-products__title-product {
   .font-oswald();
   font-size: 16px;
   line-height: 16px;
-  padding-top: 14px;
+  padding-top: 13px;
   padding-bottom: 14px;
   margin: 0;
 }
 
 .other-products__weight-price {
+  display: flex;
+  justify-content: space-between;
   line-height: 14px;
   padding-top: 0;
   padding-bottom: 13px;
   margin: 0;
 }
 
-.other-products__button {
-  margin-bottom: 17px;
+.button.other-products__button {
+  margin-bottom: 18px;
 }
 
 .other-products__special-offer {
@@ -60,18 +74,36 @@
 }
 
 .other-products__present {
+  position: relative;
+  width: 170px;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  padding: 188px 60px 42px 70px;
+  padding: 188px 60px 42px 55px;
   margin: 0;
+}
+
+.other-products__present::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 55px;
+  height: 60px;
+  background-image: url("../img/icon-gift.svg");
+  top: 66px;
+  left: 112px;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: @tablet-width) {
   .other-products {
     width: 768px;
-    margin-top: -70px;
+    margin-top: -76px;
     margin-bottom: 75px;
+  }
+
+  .other-products__caption {
+    margin: 0 30px 77px;
   }
 
   .other-products__title {
@@ -79,7 +111,6 @@
     line-height: 36px;
     width: 340px;
     padding: 0 37px;
-    margin: 0 30px 75px;
     border: none;
   }
 
@@ -88,14 +119,40 @@
   }
 
   .other-products__item {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
     box-sizing: border-box;
     margin: 0 30px;
     width: 708px;
-    padding: 28px 37px;
+    padding: 25px 37px;
+    border: 1px solid #e6e6e6;
+  }
 
-    &:first-child {
-      border-top: 1px solid #e6e6e6;
-    }
+  .other-products__title-product {
+    width: 284px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0 0 23px;
+    margin-right: 60px;
+  }
+
+  .other-products__weight-price {
+    justify-content: flex-end;
+    width: 287px;
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 23px;
+  }
+
+  .other-products__price {
+    width: 95px;
+    text-align: right;
+  }
+
+  .button.other-products__button {
+    width: 100%;
+    margin-bottom: 0;
   }
 
   .other-products__special-offer {
@@ -104,43 +161,101 @@
     margin-right: 30px;
     margin-bottom: 75px;
   }
+
+  .other-products__present {
+    width: 165px;
+    text-align: left;
+    padding: 71px 122px 68px 423px;
+    margin: 0;
+  }
+
+  .other-products__present::before {
+    left: 92px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .other-products {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     width: 1300px;
-    margin-top: -60px;
+    margin-top: -71px;
     margin-bottom: 85px;
   }
 
   .other-products__wrapper {
-    width: 895px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 88px;
+  }
+
+  .other-products__caption {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .other-products__title {
-    padding: 0 40px;
-    margin: 0 30px 75px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 0;
+    margin-bottom: 75px;
     border: none;
   }
 
   .other-products__list {
-    margin-bottom: 85px;
+    width: 895px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 0;
   }
 
   .other-products__item {
-    margin: 0 40px;
+    margin: 0;
     width: 895px;
-    padding: 27px 0;
+    padding: 0;
+    border: none;
+    border-bottom: 1px solid #e6e6e6;
+
+    &:first-child {
+      border-top: 1px solid #e6e6e6;
+    }
+  }
+
+  .other-products__title-product {
+    width: 245px;
+    padding-top: 26px;
+    padding-bottom: 24px;
+    margin-right: 80px;
+  }
+
+  .other-products__weight-price {
+    justify-content: space-between;
+    width: 285px;
+    margin-right: 40px;
+    padding: 0;
+  }
+
+  .button.other-products__button {
+    align-self: center;
+    box-sizing: border-box;
+    width: 243px;
   }
 
   .other-products__special-offer {
     background-image: url("../img/gift-photo-desktop@1x.jpg");
     margin-left: 40px;
     margin-right: 40px;
-    margin-bottom: 85px;
+    margin-bottom: 0;
     width: 245px;
+    align-self: stretch;
+  }
+
+  .other-products__present {
+    width: 170px;
+    text-align: center;
+    padding: 187px 42px 41px 40px;
+    margin: 0;
+  }
+
+  .other-products__present::before {
+    left: 95px;
   }
 }
