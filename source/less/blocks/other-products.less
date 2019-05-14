@@ -3,11 +3,9 @@
   margin: 0 auto 35px;
 }
 
-.other-products__wrapper{
+.other-products__wrapper {}
 
-}
-
-.other-products__caption{
+.other-products__caption {
   margin-top: 28px;
   margin-bottom: 32px;
 }
@@ -29,8 +27,7 @@
 .other-products__list {
   list-style: none;
   padding: 0;
-  margin: 0;
-  margin-bottom: 39px;
+  margin: 0 0 39px;
 }
 
 .other-products__item {
@@ -39,7 +36,7 @@
   margin-right: 20px;
   border-bottom: 1px solid #e6e6e6;
 
-  &:first-child{
+  &:first-child {
     border-top: 1px solid #e6e6e6;
   }
 }
@@ -94,7 +91,7 @@
   display: block;
   width: 55px;
   height: 60px;
-  background-image: url(../img/icon-gift.svg);
+  background-image: url("../img/icon-gift.svg");
   top: 66px;
   left: 112px;
   background-repeat: no-repeat;
@@ -107,7 +104,7 @@
     margin-bottom: 75px;
   }
 
-  .other-products__caption{
+  .other-products__caption {
     margin: 0 30px 77px;
   }
 
@@ -138,8 +135,7 @@
     width: 284px;
     font-size: 20px;
     line-height: 20px;
-    padding: 0;
-    padding-bottom: 23px;
+    padding: 0 0 23px;
     margin-right: 60px;
   }
 
@@ -151,7 +147,7 @@
     padding-bottom: 23px;
   }
 
-  .other-products__price{
+  .other-products__price {
     width: 95px;
     text-align: right;
   }
@@ -190,10 +186,10 @@
   .other-products__wrapper {
     display: flex;
     align-items: center;
-    margin-bottom: 85px;
+    margin-bottom: 88px;
   }
 
-  .other-products__caption{
+  .other-products__caption {
     margin-left: 0;
     margin-right: 0;
   }
@@ -210,19 +206,52 @@
     width: 895px;
     margin-left: 40px;
     margin-right: 40px;
+    margin-bottom: 0;
   }
 
   .other-products__item {
-    margin: 0 40px;
+    margin: 0;
     width: 895px;
-    padding: 27px 0;
+    padding: 0;
+  }
+
+  .other-products__title-product {
+    width: 245px;
+    padding-top: 26px;
+    padding-bottom: 24px;
+    margin-right: 80px;
+  }
+
+  .other-products__weight-price {
+    justify-content: space-between;
+    width: 285px;
+    margin-right: 40px;
+    padding: 0;
+  }
+
+  .button.other-products__button {
+    align-self: center;
+    box-sizing: border-box;
+    width: 243px;
   }
 
   .other-products__special-offer {
     background-image: url("../img/gift-photo-desktop@1x.jpg");
     margin-left: 40px;
     margin-right: 40px;
-    margin-bottom: 85px;
+    margin-bottom: 0;
     width: 245px;
+    align-self: stretch;
+  }
+
+  .other-products__present {
+    width: 170px;
+    text-align: center;
+    padding: 187px 42px 41px 40px;
+    margin: 0;
+  }
+
+  .other-products__present::before {
+    left: 95px;
   }
 }
