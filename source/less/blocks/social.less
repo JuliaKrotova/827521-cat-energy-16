@@ -7,20 +7,25 @@
   width: 125px;
   line-height: 0;
   padding: 0;
-  margin: 0;
+  margin: 0 0 0 -10px;
 }
 
-.social__link:hover svg path {
+.social__link svg {
+  fill: #666666;
+}
+
+.social__link:hover svg {
   fill: #68b738;
 }
 
-.social__link:focus svg path {
+.social__link:focus svg {
   opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {
   .social__list {
     padding-left: 17px;
+    margin: 0;
   }
 
   .social__link--vkontakte svg {
