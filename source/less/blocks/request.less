@@ -92,11 +92,11 @@
   outline: solid #ff8282;
 }
 
-.request__input:focus + .request__contacts-icon path {
+.request__input:focus + .request__contacts-icon {
   fill: #68b738;
 }
 
-.request__input--invalid + .request__contacts-icon path {
+.request__input--invalid + .request__contacts-icon {
   fill: #ff8282;
 }
 
@@ -276,6 +276,12 @@
 .request__filter-input--radio:checked:active + label,
 .request__filter-input--radio:checked:active + label::after {
   opacity: 0.3;
+}
+
+.request__filter-input--checkbox:focus + label,
+.request__filter-input--radio:focus + label {
+  outline: 1px solid rgb(77, 144, 254);
+  outline-offset: 8px;
 }
 
 @media (min-width: @tablet-width) {

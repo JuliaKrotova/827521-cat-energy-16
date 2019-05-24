@@ -191,18 +191,24 @@
 @media (min-width: @desktop-width) {
   .program {
     width: 1300px;
-    margin-bottom: 77px;
+    margin-bottom: 47px;
   }
 
   .program__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 0;
   }
 
   .program__item {
     width: 470px;
-    margin: 0 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+    &:last-child {
+      margin-bottom: 30px;
+    }
   }
 
   .program__title {
